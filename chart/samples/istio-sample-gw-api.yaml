@@ -1,10 +1,10 @@
 apiVersion: sailoperator.io/v1alpha1
 kind: Istio
 metadata:
-  name: default
+  name: gateway-controller
 spec:
   version: v1.24.2
-  namespace: istio-system
+  namespace: gateway-controller
   updateStrategy:
     type: InPlace
     inactiveRevisionDeletionGracePeriodSeconds: 30
